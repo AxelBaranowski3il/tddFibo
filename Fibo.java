@@ -13,8 +13,16 @@ public class Fibo implements Iterable<Integer>{
         return new FiboIterator(borne);
     }
 
+    public static String resFibo(int bor){
+        String res = "";
+        for (Integer i : new Fibo(bor))
+            res += i + "\n";
+        return res;
+    }
     public static void main(String[] args){
         for (Integer i : new Fibo(20))
             System.out.println(i);
+
+        System.out.println(resFibo(20));
     }
 }
