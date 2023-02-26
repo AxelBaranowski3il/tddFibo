@@ -13,6 +13,10 @@ public class Fibo implements Iterable<Integer>{
         return new FiboIterator(borne);
     }
 
+    public int getBorne() {
+        return borne;
+    }
+
     public static String resFibo(int bor){
         String res = "";
         for (Integer i : new Fibo(bor))

@@ -35,4 +35,16 @@ public class FiboTest {
     public void testResFibo20() {
         assertEquals(res20, Fibo.resFibo(20));
     }
+
+    Fibo a = new Fibo(2);
+    Fibo b = new Fibo(1);
+    int aPLUSb = a.getBorne() + b.getBorne();
+
+    Fibo c = new Fibo(3);
+    int borne3 = c.getBorne();
+
+    @org.junit.Test
+    public void testResFibo3() {
+        assertEquals(aPLUSb, borne3);
+    }
 }
